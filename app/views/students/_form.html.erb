@@ -1,0 +1,32 @@
+<div class="container">
+<%= form_for @student do |f| %>
+
+    <div class ="form-row">
+        <%= f.label :firstname, "First Name" %>
+        <%= f.text_field :firstname %>
+    </div>
+    <div class ="form-row">
+        <%= f.label :lastname, "Last Name" %>
+        <%= f.text_field :lastname %>
+    </div>
+    <div class ="form-row">
+        <%= f.label :gender, "Gender" %>
+        <%= f.text_field :gender %>
+    </div>
+    <div class ="form-row">
+        <%= f.label :age, "Age" %>
+        <%= f.text_field :age %>
+    </div>
+    <div class ="form-row">
+        <%= f.label :email, "Email" %>
+        <%= f.text_field :email %>
+    </div>
+    <div class ="form-row">
+        <%= f.label :phone_number, "Phone Number" %>
+        <%= f.text_field :phone_number %>
+    </div>
+
+    <%= f.submit "Add Student", class: "btn btn-primary" %>
+
+<% end %>
+</div>
